@@ -1,5 +1,5 @@
-body {
-  background-image: url('media/bug-background.png');
+.background {
+  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('media/bug-background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -7,10 +7,29 @@ body {
   margin: 0;
 }
 
-.logo {
-  padding: 1em;
+p {
+  font-family: "WorkSans-Italic", sans-serif;
 }
+
+.logo {
+  max-width: 20%;
+  height: auto;
+  padding: 2em;
+  padding-left: 3em;
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  /* position: sticky;
+  top: 0; */
+}
+}
+
 h1 {
   color: navy;
   margin-left: 20px;
 }
+
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/nature/nat-9/nat818.cur), auto !important;} /* End https://www.cursors-4u.com */
