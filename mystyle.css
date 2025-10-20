@@ -7,6 +7,9 @@ body {
   margin: 0;
 }
 
+.logo {
+  padding: 1em;
+}
 h1 {
   color: navy;
   margin-left: 20px;
