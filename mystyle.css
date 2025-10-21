@@ -1,6 +1,44 @@
 p {
   font-family: "WorkSans-Italic", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav{
+  font-family: "WorkSans-Italic", sans-serif;
+  padding-top: 2em;
+  padding-left: 2em;
+  top: 0;
+  position: sticky;
+}
+
+/* div{
+  border: 3px solid black;
+} */
+
+.active{
+  color: black;
+  background-color: #fce500;
+  font-weight: bold;
   font-style: italic;
+  text-decoration: none;
+  padding: 0.5em;
+  border: 0.2em solid black;
+}
+
+.nav-button{
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  padding: 0.5em;
+}
+
+.nav-button:hover{
+  color: #fce500;
 }
 
 .background {
@@ -8,32 +46,36 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   margin: 0;
 }
 
 .logo {
-  max-width: 20%;
+  max-width: 300px;
   height: auto;
-  padding: 2em;
+  padding-top: 2em;
   padding-left: 3em;
+  margin-bottom: -2em;
   user-drag: none;
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  /* position: sticky;
-  top: 0; */
 }
+
+/* .test-div{
+  border: 7px solid black;
+  display: flex;
+} */
 
 .callout-box {
   border: 7px solid black;
   background: white;
   border-radius: 3em;
-  margin: 2em;
-  /* width: fit-content;
-  height: fit-content; */
+  width: fit-content;
+  height: fit-content;
 }
 
 .callout-text{
@@ -43,10 +85,54 @@ p {
   line-height: 1em;
   padding-left: 1em;
   padding-right: 1em;
+  font-style: italic;
 }
 
 #main-description{
   float: right;
+}
+
+.opxdb-caption
+{
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+}
+
+.opxdb-main
+{
+  width:100vw;
+  text-align: center
+
+}
+
+.opxdb-spreads{
+
+}
+
+.opxdb-row1 {
+  display: flex;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+/* Create three equal columns that sits next to each other */
+.opxdb-column1 {
+  flex: 50%;
+  padding: 1em;
+}
+
+.opxdb-row2 {
+  display: flex;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+/* Create three equal columns that sits next to each other */
+.opxdb-column2 {
+  flex: 50%;
+  padding: 1em;
 }
 
 /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/nature/nat-9/nat818.cur), auto !important;} /* End https://www.cursors-4u.com */
