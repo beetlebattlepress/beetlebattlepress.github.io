@@ -1,14 +1,15 @@
+p {
+  font-family: "WorkSans-Italic", sans-serif;
+  font-style: italic;
+}
+
 .background {
-  background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url('media/bug-background.png');
+  background-image: url('media/bug-background-trans.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   margin: 0;
-}
-
-p {
-  font-family: "WorkSans-Italic", sans-serif;
 }
 
 .logo {
@@ -25,11 +26,27 @@ p {
   /* position: sticky;
   top: 0; */
 }
+
+.callout-box {
+  border: 7px solid black;
+  background: white;
+  border-radius: 3em;
+  margin: 2em;
+  /* width: fit-content;
+  height: fit-content; */
 }
 
-h1 {
-  color: navy;
-  margin-left: 20px;
+.callout-text{
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: lighter;
+  line-height: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#main-description{
+  float: right;
 }
 
 /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/nature/nat-9/nat818.cur), auto !important;} /* End https://www.cursors-4u.com */
