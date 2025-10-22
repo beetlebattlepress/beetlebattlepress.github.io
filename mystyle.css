@@ -8,6 +8,7 @@ p {
 
 nav{
   font-family: "WorkSans-Italic", sans-serif;
+  font-size: 1em;
   padding-top: 2em;
   padding-left: 2em;
   top: 0;
@@ -51,12 +52,18 @@ nav{
   margin: 0;
 }
 
+#logo-description-row{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+}
+
 .logo {
   max-width: 300px;
   height: auto;
   padding-top: 2em;
   padding-left: 3em;
-  margin-bottom: -2em;
   user-drag: none;
   -webkit-user-drag: none;
   user-select: none;
@@ -89,7 +96,8 @@ nav{
 }
 
 #main-description{
-  float: right;
+  margin-right: 2em;
+  margin-top: 3em;
 }
 
 .opxdb-caption
@@ -102,37 +110,90 @@ nav{
 
 .opxdb-main
 {
-  width:100vw;
+  max-width: 100%;
+  height: auto;
   text-align: center
 
 }
 
 .opxdb-spreads{
-
-}
-
-.opxdb-row1 {
   display: flex;
-  padding-left: 5em;
-  padding-right: 5em;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* Create three equal columns that sits next to each other */
-.opxdb-column1 {
-  flex: 50%;
+.opxdb-spreads div{
+  width: 400px;
+  margin: 1em;
   padding: 1em;
+  text-align: center;
 }
 
-.opxdb-row2 {
+/* .instagram-media{
+  margin-top:0;
+  margin-bottom:0;
+  margin-left:auto;
+  margin-right:auto;
+} */
+
+footer{
+  font-family: "WorkSans-Italic", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
   display: flex;
-  padding-left: 5em;
-  padding-right: 5em;
+  padding-bottom: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  align-items: center;
+  justify-content: space-between;
 }
 
-/* Create three equal columns that sits next to each other */
-.opxdb-column2 {
-  flex: 50%;
-  padding: 1em;
+#envelope{
+  color: white;
+  background-color: black;
+  padding: 0.5em;
+  height: auto;
 }
 
+#envelope:hover{
+  color: #fce500;
+}
+
+.email-text{
+  font-style: italic;
+  text-decoration: none;
+  color: white;
+}
+
+.email-text:hover{
+  color: #fce500;
+}
+
+.fa:hover {
+  color: #fce500;
+}
+
+.fa {
+  padding: 0.5em;
+  height: auto;
+  text-decoration: none;
+}
+
+.fa-instagram{
+  background: black;
+  color: white;
+}
+
+#copyright{
+  color: white;
+  background-color: black;
+  padding: 0.5em;
+  height: auto;
+  font-style: italic;
+  text-decoration: none;
+}
+
+#copyright:hover {
+  color: #fce500;
+}
 /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/nature/nat-9/nat818.cur), auto !important;} /* End https://www.cursors-4u.com */
