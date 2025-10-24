@@ -1,18 +1,26 @@
-p {
-  font-family: "WorkSans-Italic", sans-serif;
-}
 
 * {
   box-sizing: border-box;
+  font-family: "WorkSans-Italic", sans-serif;
+}
+
+img{
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 nav{
   font-family: "WorkSans-Italic", sans-serif;
-  font-size: 1em;
+  font-size: 1.3em;
   padding-top: 2em;
   padding-left: 2em;
   top: 0;
   position: sticky;
+  margin-bottom: 4em;
 }
 
 /* div{
@@ -54,22 +62,34 @@ nav{
 
 #logo-description-row{
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: -4em;
+}
+
+@media (max-width: 600px) {
+  #logo-description-row {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+  }
+}
+
+.logo-nav{
+  width:auto;
+  height:3em;
+  float:right;
+  margin-right: 2em;
+  margin-top:-0.5em;
 }
 
 .logo {
+  width: 100%;
   max-width: 300px;
   height: auto;
   padding-top: 2em;
   padding-left: 3em;
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 
 /* .test-div{
@@ -95,9 +115,36 @@ nav{
   font-style: italic;
 }
 
+.callout-box-header {
+  border: 7px solid black;
+  background: white;
+  border-radius: 3em;
+  width: fit-content;
+  height: fit-content;
+}
+
+.callout-text-header{
+  color: black;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-style: italic;
+}
+
+.opxdb-title
+{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: -1em;
+}
+
 #main-description{
   margin-right: 2em;
   margin-top: 3em;
+  margin-left: 5em;
 }
 
 .opxdb-caption
@@ -105,15 +152,17 @@ nav{
   width: 40%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2em;
 }
 
 .opxdb-main
 {
-  max-width: 100%;
-  height: auto;
   text-align: center
+}
 
+img.opxdb-gif{
+  width: 100%;
+  max-width:900px;
+  height: auto;
 }
 
 .opxdb-spreads{
@@ -136,6 +185,77 @@ nav{
   margin-right:auto;
 } */
 
+/*------- top section for about page -------*/
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding: 2em;
+  flex-wrap: nowrap;
+}
+
+.about-image {
+  width: 50%;
+  min-width:300px;
+  max-width: 600px;
+  height: auto;
+  border-radius: 1.5em;
+}
+
+@media (max-width: 700px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    width: 80%;
+  }
+}
+
+/*------- bottom section for about page -------*/
+
+#bio-image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin: 2em auto;
+  max-width: 1200px;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.bio-image {
+  display: block;
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.bio-image img {
+  width: 100%;
+  height: auto;
+  border: 0.5em solid;
+  border-radius: 2em;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  #bio-image-row {
+    flex-direction: column;
+  }
+
+  .bio-image {
+    flex: none;
+    max-width: 90%;
+  }
+}
+
+/*------- footer -------*/
+
 footer{
   font-family: "WorkSans-Italic", sans-serif;
   font-weight: bold;
@@ -146,6 +266,7 @@ footer{
   padding-right: 2em;
   align-items: center;
   justify-content: space-between;
+  margin-top: 2em;
 }
 
 #envelope{
@@ -184,7 +305,7 @@ footer{
   color: white;
 }
 
-#copyright{
+.copyright{
   color: white;
   background-color: black;
   padding: 0.5em;
@@ -193,7 +314,16 @@ footer{
   text-decoration: none;
 }
 
-#copyright:hover {
+.copyright:hover {
   color: #fce500;
 }
-/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/nature/nat-9/nat818.cur), auto !important;} /* End https://www.cursors-4u.com */
+
+* {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-9/nat818.cur), auto !important;
+}
+
+a:hover,
+a:hover img,
+button:hover {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-9/nat825.cur), pointer !important;
+}
