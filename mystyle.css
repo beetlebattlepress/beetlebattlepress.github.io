@@ -153,8 +153,6 @@ nav {
   width:auto;
   height:3em;
   float:right;
-  margin-right: 2em;
-  margin-top:-0.5em;
 }
 
 .logo {
@@ -167,7 +165,7 @@ nav {
 
 #main-description{
   margin-right: 2em;
-  margin-left: 5em;
+  margin-left: 2em;
 }
 
 /*------- OPxDB Fanzine formatting -------*/
@@ -214,6 +212,16 @@ img.opxdb-gif{
   .opxdb-spreads {
     grid-template-columns: 1fr;
   }
+
+  .project-grid-item {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .callout-box.opxdb-caption {
+   width: calc(100% - 3em);
+   margin: 2em auto 0 auto;
+ }
 }
 
 /*------- top section for about page -------*/
@@ -339,6 +347,11 @@ img.opxdb-gif{
     width: 80%;
     margin: 0 auto;
   }
+
+  .callout-box.project-page-caption {
+   width: calc(100% - 3em);
+   margin: 2em auto 0 auto;
+ }
 }
 
 /*------- Project Page formatting -------*/
