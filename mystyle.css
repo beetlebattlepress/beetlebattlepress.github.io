@@ -465,38 +465,3 @@ footer a{
     font-size:0.7em;
   }
 }
-
-/*----java blog----*/
-.rss-feed {
-  max-width: 900px;
-  margin: 2em auto;
-}
-
-/* feed title */
-.feed-title {
-  font-size: 2em;
-  font-style: italic;
-  text-align: center;
-}
-
-/* each post title */
-.feed-item-title {
-  font-size: 1.3em;
-  font-weight: bold;
-  margin-top: 1em;
-}
-
-/* description text */
-.feed-item-desc {
-  font-size: 1em;
-  line-height: 1.4em;
-}
-
-/* make each post feel like your callout boxes */
-.feed-item {
-  border: 7px solid black;
-  border-radius: 3em;
-  background: white;
-  padding: 1em;
-  margin-bottom: 1.5em;
-}
