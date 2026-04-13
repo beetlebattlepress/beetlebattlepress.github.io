@@ -87,6 +87,7 @@ img{
 .callout-link{
   text-decoration: none;
   color: black;
+  line-height: 1em;
 }
 
 a:hover{
